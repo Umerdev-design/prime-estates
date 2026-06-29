@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prime Estates helps clients discover luxury homes, investment properties, and smart real estate guidance with a premium concierge experience.">
+    <meta name="theme-color" content="#0f172a">
+    <meta property="og:title" content="Prime Estates | Luxury Real Estate">
+    <meta property="og:description" content="Discover luxury properties and tailored real estate guidance from Prime Estates.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://primeestates.example/">
+    <link rel="canonical" href="https://primeestates.example/">
+    <title>Prime Estates | Luxury Real Estate</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a class="logo" href="#home" aria-label="Prime Estates home">Prime Estates</a>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#properties">Properties</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#agents">Agents</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="nav-btn">Book a Call</a>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content reveal">
+                <span class="hero-tag">Premium Real Estate Solutions</span>
+                <h1>Discover luxury properties that elevate your lifestyle.</h1>
+                <p>From waterfront villas to modern penthouses, our advisors guide every step of your buying or selling journey with clarity and care.</p>
+                <div class="hero-stats">⭐ 1,200+ Happy Clients &nbsp;|&nbsp; 🏠 500+ Properties Sold &nbsp;|&nbsp; 💰 $250M+ Transactions</div>
+                <div class="hero-buttons">
+                    <a href="#properties" class="primary-btn">Explore Properties</a>
+                    <a href="#contact" class="secondary-btn">Book Consultation</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="search-section" aria-labelledby="search-title">
+            <div class="container">
+                <form class="search-box" id="search-form">
+                    <h2 id="search-title" class="sr-only">Property search</h2>
+                    <label class="sr-only" for="location">Location</label>
+                    <input id="location" type="text" name="location" placeholder="Search by location">
+
+                    <label class="sr-only" for="propertyType">Property Type</label>
+                    <select id="propertyType" name="propertyType">
+                        <option value="">Property Type</option>
+                        <option value="House">House</option>
+                        <option value="Apartment">Apartment</option>
+                        <option value="Commercial">Commercial</option>
+                    </select>
+
+                    <label class="sr-only" for="budget">Budget</label>
+                    <select id="budget" name="budget">
+                        <option value="">Budget</option>
+                        <option value="100k-500k">$100k - $500k</option>
+                        <option value="500k-1M">$500k - $1M</option>
+                        <option value="1M+">$1M+</option>
+                    </select>
+
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="properties reveal" id="properties">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Properties</h2>
+                    <p>Explore our hand-picked premium listings, tailored for modern living and long-term value.</p>
+                </div>
+
+                <div class="property-grid">
+                    <article class="property-card">
+                        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=900&q=80" alt="Luxury villa with a pool and landscaped garden" loading="lazy" onerror="this.onerror=null;this.src='assets/images/placeholder-property.svg';">
+                        <div class="property-content">
+                            <h3>Luxury Villa</h3>
+                            <p>📍 Beverly Hills, California</p>
+                            <p class="property-info">🛏 4 Beds | 🛁 3 Baths | 📐 3,200 sqft</p>
+                            <span>$2.5 Million</span>
+                            <a href="#contact" class="property-btn">Request Viewing</a>
+                        </div>
+                    </article>
+
+                    <article class="property-card">
+                        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=900&q=80" alt="Contemporary apartment with city skyline view" loading="lazy" onerror="this.onerror=null;this.src='assets/images/placeholder-property.svg';">
+                        <div class="property-content">
+                            <h3>Modern Apartment</h3>
+                            <p>📍 Downtown Dubai</p>
+                            <p class="property-info">🛏 3 Beds | 🛁 2 Baths | 📐 2,200 sqft</p>
+                            <span>$950,000</span>
+                            <a href="#contact" class="property-btn">Request Viewing</a>
+                        </div>
+                    </article>
+
+                    <article class="property-card">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=80" alt="Elegant family home with a bright facade" loading="lazy" onerror="this.onerror=null;this.src='assets/images/placeholder-property.svg';">
+                        <div class="property-content">
+                            <h3>Premium House</h3>
+                            <p>📍 Bahria Town</p>
+                            <p class="property-info">🛏 5 Beds | 🛁 4 Baths | 📐 4,500 sqft</p>
+                            <span>$1.8 Million</span>
+                            <a href="#contact" class="property-btn">Request Viewing</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-us reveal" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why Choose Prime Estates</h2>
+                    <p>We make buying, selling, and investing feel effortless through expert strategy and premium support.</p>
+                </div>
+                <div class="benefits-grid">
+                    <article class="benefit-card">
+                        <h3>Market Insight</h3>
+                        <p>We bring hyper-local market intelligence to help you secure the right opportunity at the right price.</p>
+                    </article>
+                    <article class="benefit-card">
+                        <h3>Personalized Service</h3>
+                        <p>Every client receives dedicated guidance, transparent communication, and a concierge-style experience.</p>
+                    </article>
+                    <article class="benefit-card">
+                        <h3>Trusted Network</h3>
+                        <p>Our network of legal, financial, and design partners ensures a smooth transaction from start to finish.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats reveal">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h2>500+</h2>
+                        <p>Properties Sold</p>
+                    </div>
+                    <div class="stat-card">
+                        <h2>1,200+</h2>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="stat-card">
+                        <h2>15+</h2>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-card">
+                        <h2>50+</h2>
+                        <p>Professional Agents</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="agents reveal" id="agents">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Meet Our Advisors</h2>
+                    <p>Experienced professionals dedicated to delivering exceptional service across premium markets.</p>
+                </div>
+                <div class="agents-grid">
+                    <article class="agent-card">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" alt="Portrait of real estate advisor Maya Chen" loading="lazy" onerror="this.onerror=null;this.src='assets/images/placeholder-property.svg';">
+                        <h3>Maya Chen</h3>
+                        <p>Luxury Residential Specialist</p>
+                    </article>
+                    <article class="agent-card">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80" alt="Portrait of real estate advisor Sarah Khan" loading="lazy" onerror="this.onerror=null;this.src='assets/images/placeholder-property.svg';">
+                        <h3>Sarah Khan</h3>
+                        <p>Commercial & Investment Lead</p>
+                    </article>
+                    <article class="agent-card">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=300&q=80" alt="Portrait of real estate advisor Daniel Brooks" loading="lazy" onerror="this.onerror=null;this.src='assets/images/placeholder-property.svg';">
+                        <h3>Daniel Brooks</h3>
+                        <p>International Client Advisor</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta reveal">
+            <div class="container">
+                <h2>Ready to discover your next address?</h2>
+                <p>Let our expert team help you secure the perfect home or investment opportunity with confidence and ease.</p>
+                <a href="#contact" class="cta-btn">Schedule a Consultation</a>
+            </div>
+        </section>
+
+        <section class="contact reveal" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Get In Touch</h2>
+                    <p>Share your goals and we will create a tailored real estate plan for you.</p>
+                </div>
+
+                <form class="contact-form" id="contact-form" novalidate>
+                    <div class="form-row">
+                        <div class="field-group">
+                            <label for="name">Full Name</label>
+                            <input id="name" name="name" type="text" placeholder="Your name" required>
+                            <div class="field-error" data-error-for="name"></div>
+                        </div>
+                        <div class="field-group">
+                            <label for="email">Email Address</label>
+                            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                            <div class="field-error" data-error-for="email"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="field-group">
+                            <label for="phone">Phone Number</label>
+                            <input id="phone" name="phone" type="tel" placeholder="+1 555 123 4567" required>
+                            <div class="field-error" data-error-for="phone"></div>
+                        </div>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your property goals" required></textarea>
+                        <div class="field-error" data-error-for="message"></div>
+                    </div>
+
+                    <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <h2>Prime Estates</h2>
+            <p>Helping clients buy, sell, and invest in premium real estate properties worldwide.</p>
+            <p class="copyright">© <span id="year"></span> Prime Estates. Crafted for a premium client experience.</p>
+        </div>
+    </footer>
+
+    <a href="#home" class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</a>
+    <a href="https://wa.me/923041435470" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
